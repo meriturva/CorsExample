@@ -25,7 +25,7 @@ app.post('/login', (req, res) => {
     if(req.body.username == "diego" && req.body.password == "bonura") {
         console.log("L'utente " + req.body.username + "ha effettuato correttamente il login")
         // Ok va tutto bene
-        res.cookie('cookieAutenticazione', 'loginOk')
+        res.cookie('cookieAutenticazione', 'loginOk');
         res.send('Ok');
     } else {
         console.log("Errore login")
