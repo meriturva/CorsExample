@@ -23,7 +23,7 @@ app.use(cors(corsConfiguration));
 app.post('/login', (req, res) => {
     console.log("Ricevuto una login con questi dati:", req.body);
     if(req.body.username == "diego" && req.body.password == "bonura") {
-        console.log("L'utente " + req.body.username + "ha effettuato correttamente il login")
+        console.log("L'utente " + req.body.username + " ha effettuato correttamente il login")
         // Ok va tutto bene
         res.cookie('cookieAutenticazione', 'loginOk');
         res.send('Ok');
